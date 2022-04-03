@@ -102,7 +102,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Update function code
-        run: 
+        run: |
           aws lambda update-function-code \
           --function-name github_actions_function \
           --s3-bucket github-actions-test-folder \
